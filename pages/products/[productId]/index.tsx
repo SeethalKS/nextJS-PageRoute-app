@@ -1,5 +1,5 @@
 import { GetServerSideProps } from "next";
-import { ProductsService } from "../../services/products-service";
+import { ProductsService } from "../../../services/products-service";
 
 export default function ProductDetail({ product }: { product: any }) {
   if (!product) {

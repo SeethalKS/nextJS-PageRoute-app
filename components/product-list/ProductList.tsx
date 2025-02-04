@@ -2,7 +2,7 @@
 'use client';
 import React, { useState, useEffect, useContext } from "react";
 import ProductCard from "../product-card/ProductCard";
-import { ProductsService } from "../../pages/services/products-service";
+import { ProductsService } from "../../services/products-service";
 import CartContext from "../../context/CartContext";
 
 export default function ProductList() {

@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Link from "next/link";
-import { ProductsService } from "./services/products-service";
+import { ProductsService } from "../services/products-service";
 
 import styles from "../styles/Home.module.css";
 
