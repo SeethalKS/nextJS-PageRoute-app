@@ -1,0 +1,44 @@
+|-->components
+|           |->cart
+|               |->Cart.tsx
+|           |->footer
+|               |->Footer.tsx
+|           |->nav
+|               |->Nav.tsx
+|           |->product-card
+|               |->ProductCard.tsx
+|           |->product-list
+|               |->ProductList.tsx
+|-->context
+|      |->CartContext.tsx
+|
+|-->pages
+|      |->about
+|      |      |->index.tsx
+|      |->cartview
+|      |      |->index.tsx
+|      |->products
+|      |      |->[productId]
+|      |      |       |->index.tsx
+|      |      |->index.tsx
+|      |->services
+|      |      |->products-service.ts
+|      |      |->service-base.ts
+|      | 
+|      |->_app.tsx
+|      |->_document.tsx
+|      |->index.tsx       
+
+
+
+Uses ssr: false (so it loads only on the client, avoiding hydration issues)
+The issue is that Suspense for data fetching
+ is not fully supported in Next.js
+ (unless you're using React Server Components in app/ directory).
+ In Next.js, Suspense is primarily used for lazy-loaded components 
+with React.lazy, but not for standard component rendering.
+//Object literal may only specify known properties, 
+and 'suspense' does not exist in type 'DynamicOptions<{}>'.ts(23
+//The error occurs because suspense: true is not supported in Next.js's next/dynamic. 
+Instead, you should use a fallback option directly in dynamic(), 
+rather than wrapping it in <Suspense>.

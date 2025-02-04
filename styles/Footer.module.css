@@ -1,0 +1,10 @@
+.downdiv{
+    min-height: 150px;
+    width:100%;
+    background-color: rgb(251, 248, 248);
+    object-fit:contain;
+    position: sticky;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: rgb(159, 175, 175);
+}
