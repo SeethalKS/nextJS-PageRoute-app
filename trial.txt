@@ -42,3 +42,4 @@ and 'suspense' does not exist in type 'DynamicOptions<{}>'.ts(23
 //The error occurs because suspense: true is not supported in Next.js's next/dynamic. 
 Instead, you should use a fallback option directly in dynamic(), 
 rather than wrapping it in <Suspense>.
+https://git.upcode.in/upcode/seethal-k-s/-/merge_requests/14

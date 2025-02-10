@@ -43,6 +43,11 @@ export default function Nav() {
                   About Us
                 </Link>
               </li>
+              <li className="nav-item" style={{fontStyle:'italic'}}>
+                <Link className="nav-link" href={"/contact"}>
+                  Contact Us
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
